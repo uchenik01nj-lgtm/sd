@@ -1,0 +1,112 @@
+[gd_scene format=3 uid="uid://bvasrq3ftvnm"]
+
+[ext_resource type="Script" uid="uid://vnj7kwnhakgk" path="res://scenes/meni.gd" id="1_1wdtp"]
+[ext_resource type="Texture2D" uid="uid://cfq5yv21slrbv" path="res://assets/ui/заставкка новелы.png" id="2_1wdtp"]
+[ext_resource type="FontFile" uid="uid://bqckq888e1kd7" path="res://assets/ui/allercyrillic.ttf" id="2_20cwd"]
+
+[node name="Control" type="Control" unique_id=1246963857]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 242.0
+offset_bottom = 129.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_1wdtp")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1805009558]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 3.0
+offset_right = 1154.0
+offset_bottom = 650.0
+mouse_filter = 2
+texture = ExtResource("2_1wdtp")
+expand_mode = 1
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=1132286087]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 50.0
+offset_right = 301.0
+offset_bottom = 601.0
+mouse_filter = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer" unique_id=2048776471]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 26
+alignment = 2
+
+[node name="Button" type="Button" parent="CenterContainer/VBoxContainer" unique_id=1048634562]
+layout_mode = 2
+size_flags_stretch_ratio = 7.05
+localize_numeral_system = false
+theme_override_colors/font_color = Color(1, 0.3966296, 0.5876332, 1)
+theme_override_constants/outline_size = 7
+theme_override_constants/h_separation = 2
+theme_override_fonts/font = ExtResource("2_20cwd")
+theme_override_font_sizes/font_size = 35
+button_mask = 0
+shortcut_feedback = false
+shortcut_in_tooltip = false
+text = "Начать"
+flat = true
+
+[node name="Button2" type="Button" parent="CenterContainer/VBoxContainer" unique_id=1540186093]
+z_index = 30
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0.7767, 0.9990943, 1)
+theme_override_colors/font_pressed_color = Color(0.9384789, 0.8759948, 0.9043566, 1)
+theme_override_colors/font_hover_color = Color(0.94111186, 0.9413232, 0.74695235, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 9
+theme_override_fonts/font = ExtResource("2_20cwd")
+theme_override_font_sizes/font_size = 35
+button_mask = 0
+text = "Загрузить"
+flat = true
+icon_alignment = 1
+vertical_icon_alignment = 0
+expand_icon = true
+
+[node name="Button3" type="Button" parent="CenterContainer/VBoxContainer" unique_id=2119625641]
+z_index = 7
+layout_mode = 2
+theme_override_colors/font_color = Color(1.0396242e-05, 0.8302198, 0.6303277, 1)
+theme_override_colors/font_pressed_color = Color(0.9384789, 0.8759948, 0.9043566, 1)
+theme_override_colors/font_hover_color = Color(0.94111186, 0.9413232, 0.74695235, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_constants/h_separation = 4
+theme_override_fonts/font = ExtResource("2_20cwd")
+theme_override_font_sizes/font_size = 36
+button_mask = 0
+text = "Hастройки"
+flat = true
+icon_alignment = 1
+vertical_icon_alignment = 0
+expand_icon = true
+
+[node name="Button4" type="Button" parent="CenterContainer/VBoxContainer" unique_id=590024255]
+z_index = 7
+layout_mode = 2
+theme_override_colors/font_color = Color(0.7453797, 0.63574487, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.9384789, 0.8759948, 0.9043566, 1)
+theme_override_colors/font_hover_color = Color(0.94111186, 0.9413232, 0.74695235, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_constants/h_separation = 1
+theme_override_constants/align_to_largest_stylebox = 0
+theme_override_constants/line_spacing = 0
+theme_override_fonts/font = ExtResource("2_20cwd")
+theme_override_font_sizes/font_size = 37
+button_mask = 0
+text = "Bыйти"
+flat = true
+icon_alignment = 1
+vertical_icon_alignment = 0
+expand_icon = true
+
+[connection signal="pressed" from="CenterContainer/VBoxContainer/Button" to="." method="_on_button_pressed"]

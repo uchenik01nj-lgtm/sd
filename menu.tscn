@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://b5fritb1hqsuw"]
+
+[ext_resource type="Script" uid="uid://bjoq4bhv7jwbs" path="res://menu.gd" id="1_mae5d"]
+[ext_resource type="Texture2D" uid="uid://cfq5yv21slrbv" path="res://assets/ui/заставкка новелы.png" id="2_4hy44"]
+[ext_resource type="FontFile" uid="uid://bqckq888e1kd7" path="res://assets/ui/allercyrillic.ttf" id="3_ytr4m"]
+
+[node name="Control" type="Control" unique_id=1572710599]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_mae5d")
+
+[node name="ЗаставккаНовелы" type="Sprite2D" parent="." unique_id=2120839245]
+position = Vector2(577, 325.5)
+scale = Vector2(0.8343023, 0.84505206)
+texture = ExtResource("2_4hy44")
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=1975054493]
+layout_mode = 0
+offset_left = 600.0
+offset_top = 220.0
+offset_right = 851.0
+offset_bottom = 771.0
+mouse_filter = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer" unique_id=2128057839]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 26
+alignment = 2
+
+[node name="Button" type="Button" parent="CenterContainer/VBoxContainer" unique_id=103681703]
+layout_mode = 2
+size_flags_stretch_ratio = 7.05
+localize_numeral_system = false
+theme_override_colors/font_color = Color(1, 0.3966296, 0.5876332, 1)
+theme_override_constants/outline_size = 7
+theme_override_constants/h_separation = 2
+theme_override_fonts/font = ExtResource("3_ytr4m")
+theme_override_font_sizes/font_size = 60
+shortcut_feedback = false
+shortcut_in_tooltip = false
+text = "Начать"
+flat = true
+
+[connection signal="pressed" from="CenterContainer/VBoxContainer/Button" to="." method="_on_button_pressed"]

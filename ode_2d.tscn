@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://brphpwcggcswq"]
+
+[ext_resource type="Texture2D" uid="uid://c3c12jgoaeuge" path="res://assets/backgrounds/ChatGPT Image 25 апр. 2026 г., 12_42_57.png" id="1_6q3pp"]
+[ext_resource type="Script" uid="uid://da1rbssdfwi8k" path="res://ode_2d.gd" id="1_u13o3"]
+[ext_resource type="FontFile" uid="uid://bqckq888e1kd7" path="res://assets/ui/allercyrillic.ttf" id="3_q7777"]
+
+[node name="Control" type="Control" unique_id=60623145]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1153.0
+offset_bottom = 653.0
+script = ExtResource("1_u13o3")
+
+[node name="Background" type="TextureRect" parent="." unique_id=189298070]
+layout_mode = 0
+offset_right = 1160.0
+offset_bottom = 644.0
+texture = ExtResource("1_6q3pp")
+expand_mode = 1
+
+[node name="TextBox" type="Panel" parent="." unique_id=450652622]
+layout_mode = 0
+offset_left = 163.0
+offset_top = 488.0
+offset_right = 1047.0
+offset_bottom = 627.0
+
+[node name="DialogueText" type="Label" parent="TextBox" unique_id=778555246]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 2.0
+offset_right = 886.0
+offset_bottom = 136.0
+theme_override_fonts/font = ExtResource("3_q7777")
+
+[node name="Panel" type="Panel" parent="." unique_id=1177704787]
+layout_mode = 0
+offset_left = 163.0
+offset_top = 442.0
+offset_right = 354.0
+offset_bottom = 485.0
+
+[node name="Label" type="Label" parent="." unique_id=1660754261]
+layout_mode = 0
+offset_left = 239.0
+offset_top = 441.0
+offset_right = 279.0
+offset_bottom = 478.0
+theme_override_fonts/font = ExtResource("3_q7777")
+theme_override_font_sizes/font_size = 27
+text = "ты"

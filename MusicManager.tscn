@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://com5suk1gykob"]
+
+[ext_resource type="AudioStream" uid="uid://bfnj78x5a5131" path="res://assets/ui/5fee5524b9c82f3.mp3" id="1_7bbi8"]
+[ext_resource type="Script" uid="uid://bcyd47hd5ebta" path="res://music_manager.gd" id="1_y4juv"]
+
+[node name="Control" type="Control" unique_id=615010834]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_y4juv")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=342850556]
+stream = ExtResource("1_7bbi8")
+autoplay = true
+parameters/looping = true

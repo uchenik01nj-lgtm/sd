@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://l5f712sl51pf"]
+
+[ext_resource type="Texture2D" uid="uid://7atb4puh45d" path="res://assets/backgrounds/ChatGPT Image 2 мая 2026 г., 11_48_38.png" id="1_0fbet"]
+[ext_resource type="Script" uid="uid://c20n6qv3115j1" path="res://ontrol.gd" id="1_62e2m"]
+[ext_resource type="FontFile" uid="uid://bqckq888e1kd7" path="res://assets/ui/allercyrillic.ttf" id="3_qtu10"]
+
+[node name="Control" type="Control" unique_id=1313815122]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_62e2m")
+
+[node name="Background" type="TextureRect" parent="." unique_id=592834777]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 651.0
+texture = ExtResource("1_0fbet")
+expand_mode = 1
+
+[node name="Panel" type="Panel" parent="." unique_id=1002991818]
+layout_mode = 0
+offset_left = 144.0
+offset_top = 458.0
+offset_right = 335.0
+offset_bottom = 501.0
+
+[node name="Label" type="Label" parent="." unique_id=1352970021]
+layout_mode = 0
+offset_left = 221.0
+offset_top = 464.0
+offset_right = 261.0
+offset_bottom = 498.0
+theme_override_fonts/font = ExtResource("3_qtu10")
+theme_override_font_sizes/font_size = 24
+text = "???"
+
+[node name="TextBox" type="Panel" parent="." unique_id=525582314]
+layout_mode = 0
+offset_left = 142.0
+offset_top = 506.0
+offset_right = 1026.0
+offset_bottom = 645.0
+
+[node name="DialogueText" type="Label" parent="TextBox" unique_id=1463336132]
+layout_mode = 0
+offset_left = -3.0
+offset_top = 1.0
+offset_right = 882.0
+offset_bottom = 135.0
+theme_override_fonts/font = ExtResource("3_qtu10")

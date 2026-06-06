@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://dju2qq1j3yp2w"]
+
+[ext_resource type="Script" uid="uid://bt4olmnvro4hs" path="res://control.gd" id="1_0e48y"]
+[ext_resource type="Texture2D" uid="uid://dabicxtamg0bt" path="res://assets/backgrounds/177408297741e7 (1).png" id="1_wtcfe"]
+[ext_resource type="FontFile" uid="uid://bqckq888e1kd7" path="res://assets/ui/allercyrillic.ttf" id="3_epypp"]
+
+[node name="Node2D" type="Node2D" unique_id=1229427935]
+
+[node name="Control" type="Control" parent="." unique_id=490168691]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1144.0
+offset_bottom = 647.0
+script = ExtResource("1_0e48y")
+
+[node name="Background" type="TextureRect" parent="Control" unique_id=372275330]
+layout_mode = 0
+offset_right = 1158.0
+offset_bottom = 654.0
+texture = ExtResource("1_wtcfe")
+expand_mode = 1
+
+[node name="Panel" type="Panel" parent="Control" unique_id=1920504915]
+layout_mode = 0
+offset_left = 106.0
+offset_top = 419.0
+offset_right = 335.0
+offset_bottom = 474.0
+
+[node name="Label" type="Label" parent="Control" unique_id=178790606]
+layout_mode = 0
+offset_left = 183.0
+offset_top = 422.0
+offset_right = 227.0
+offset_bottom = 468.0
+theme_override_fonts/font = ExtResource("3_epypp")
+theme_override_font_sizes/font_size = 33
+text = "ты"
+
+[node name="TextBox" type="Panel" parent="Control" unique_id=1074395655]
+layout_mode = 0
+offset_left = 107.0
+offset_top = 487.0
+offset_right = 991.0
+offset_bottom = 626.0
+
+[node name="DialogueText" type="Label" parent="Control/TextBox" unique_id=575775720]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 2.0
+offset_right = 889.0
+offset_bottom = 136.0
+theme_override_fonts/font = ExtResource("3_epypp")
